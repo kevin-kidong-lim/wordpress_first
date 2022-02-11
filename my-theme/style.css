@@ -1,0 +1,198 @@
+/*
+Theme Name: My Theme
+Theme URI: https://github.com/wordpress/twentytwentytwo/
+Author: Kevin Lim
+Author URI: https://wordpress.org/
+Description: my fist theme
+Version: 1.0
+*/
+/* font */
+@import url(http://fonts.goggleapis.com/earlyaccess/nanumgothic.css);
+*{
+    box-sizing: border-box;
+    /* 보더값을 포함한 width값이 나옴. */
+}
+body{
+    font-family: "Nanum Gothic",Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+p {
+    line-height: 1.65em;
+}
+a {
+    color: #006ec3;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+img.attachment-custom, img.not-found{
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+img.not-found{
+    width: 220px;
+    height: 250px;
+}
+article.post{
+    padding-bottom: 20px;
+}
+div.container{
+    max-width:  920px;
+    margin:  0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.site-header{
+    border-bottom: 2px solid #999;
+}
+.site-footer{
+    margin-top: 30px;
+    border-bottom: 2px solid #999;
+}
+article.post{
+    border-bottom: 2px dotted #bbb;
+}
+article.post:last-of-type{
+    border-bottom: 0;
+}
+
+/* menu */
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+.site-nav ul li{
+    list-style: none;
+    float: left;
+
+}
+/*  clear fax, 부모노드의 길이를 안정했을때, 
+자식에 float 이 안먹을때.. 
+부모 노드의 값이 0으로 되어, 자식 아래로 나온다.. 
+클리어픽스 로 적용.. 아래 코드 ..
+*/
+.site-nav ul::before, .site-nav ul::after{
+    content: "";
+    display: table;
+}
+.site-nav ul::after{
+    clear: both;
+}
+/* 주메뉴 */
+.site-header .site-nav ul li a {
+    display: block;
+    padding: 10px 18px;
+    border: 1px solid #999;
+    border-bottom: 0;
+    margin-right: 5px;
+ }
+ .site-header .site-nav ul li a:hover {
+    background-color: #ececec;
+ }
+ .site-header .site-nav ul li.current-menu-item a {
+    background-color: #006ec3;
+    color: white;
+ }
+ /* 하단메뉴 */
+ .site-footer .site-nav ul li{
+     margin-left: 5px;
+     padding-right: 5px;
+     border-right: 1px dotted #999;
+ }
+ .site-footer .site-nav ul li:last-of-type{
+     border-right: 0;
+ }
+ /* article page */
+ article.page h2{
+     font-size: 2rem;
+ }
+
+ /*  clearfix */
+ .clearfix::before, .clearfix::after{
+     content: "";
+     display: table;
+ }
+ .clearfix::after{
+     clear:both;
+ }
+ /* 업무영역 페이지 */
+ .title-column{
+     width: 30%;
+     float: left;
+ }
+ .content-column{
+     width: 70%;
+     float: right;
+ }
+
+
+ .content-box{
+     padding: 30px 30px;
+ }
+ /* 페이지 서브 메뉴 */
+.site-nav.sub-nav{
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+.site-nav.sub-nav ul li{
+    display: table-cell;
+    width: 33%;
+}
+.site-nav.sub-nav ul li a{
+    display: table-cell;
+    width: 33%;
+    border: 2px solid #fdd043;
+    padding: 10px 20px;
+    border-right: 0;
+    text-align: center;
+    font-size: 1rem;
+    columns: #333;
+    font-weight: bold;
+}
+.site-nav.sub-nav ul li:last-of-type a{
+    border-right: 2px solid #FDD043;
+  }
+
+.site-nav.sub-nav ul li a:hover{
+    background-color: #fdd043;
+    color: white;
+}
+.site-nav.sub-nav ul li.current_page_item a{
+    background-color: #fdd043;
+    color: white;
+}
+.site-header nav ul li.current-page-ancestor a{
+    background-color: #006ec3;
+    color: white;
+}
+ /* 푸터 템플릿 */
+ .info-box{
+     width: 30%;
+     float: right;
+     margin: 0 0 30px 30px;
+     padding: 20px;
+     background-color: gray;
+ }
+ .info-box p{
+     font-size: 0.75rem;;
+ }
+ /* 포스트 */
+ .post h2{
+     margin-bottom: 0;
+ }
+ 
+p.post-info{
+    font-size: 0.8rem;
+    color: #808080;
+  }
+p.post-info a{
+    color: #808080;
+    border-bottom: 1px solid #808080;
+  }
