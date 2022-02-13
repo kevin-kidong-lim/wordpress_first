@@ -1,0 +1,304 @@
+/*
+Theme Name: LearningWordPress
+Theme URI: https://github.com/wordpress/twentytwentytwo/
+Author: Kevin Lim
+Author URI: https://kevin.org
+Description: Learning WordPress Practice
+Version: 1.0
+*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+p{
+    line-height: 1.65em;
+}
+a:link,
+a:visited{
+    color: #006ec3;
+}
+/* General Layout */
+div.container{
+    max-width: 920px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.site-header{
+    border-bottom: 2px solid #999;
+   
+}
+.site-header h1{
+    /* border: 1px solid red; */
+    margin-bottom: 0;
+}
+.site-header h5{
+    margin-top: 0;
+    color: gray;
+    padding-left: 10px;
+    /* border: 1px solid red; */
+}
+.site-footer{
+    margin-top: 30px;
+    border-top: 2px solid #999;
+}
+
+/* Navigation menu */
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.site-nav ul:before, .site-nav ul:after{ content: "";display:table}
+.site-nav ul:after{clear: both;}
+.site-nav ul {*zoom: 1;}
+.site-nav ul li{
+    list-style: none;
+    float: left;
+}
+/* site header menu */
+.site-header nav ul li{
+    margin-right: 5px;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+    display: block;
+    padding: 10px 19px;
+    border: 1px solid #bbb;
+    border-bottom: none;
+    text-decoration: none;
+}
+.site-header nav ul li a:hover{
+    background-color: #ececce;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited
+{
+    background-color: #006ec3;
+    color: white;
+}
+
+/*  Post Columns */
+.home-columns{
+    padding-top: 30px;
+    font-size: 60%;
+}
+.one-harf{
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+.last {
+    margin-right: 0;
+}
+
+.btn-a,
+.btn-a:link,
+.btn-a:visited{
+    margin-top: 12px;
+    display: inline-block;
+    background-color: #006ec3;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .6);
+}
+/* Main column */
+.main-column {
+    width: 66%;
+    float: left;
+}
+.secondary-column{
+    width:30%;
+    float: right;
+}
+/* footer menu */
+.footer-widget-area {
+    width: 25%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+
+.site-footer nav ul li{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 2px solid #bbb;
+    text-decoration: none;
+}
+.site-footer nav ul li a:link,
+.site-footer nav ul li a:visited{
+    text-decoration: none;
+}
+.site-footer nav ul li:last-of-type{
+    border: none;
+}
+/* page */
+article.page h2{
+    font-size: 225%;
+    margin-bottom: 15px;
+}
+article.post{
+    border-bottom: 1px dotted #bbbbbb;
+    margin-bottom: 20px;
+}
+article.post:last-of-type{
+    border-bottom: none;
+}
+/*  Aside sytle */
+article.post-aside,
+article.post-link{
+    font-size: 125%;
+    background-color: #fff5cb;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(0,0,0, .1);
+}
+.mini-meta{
+    font-size: 68%;
+    margin: 0;
+    color: #777 ;
+}
+/* link post format */
+article.post-link{
+    padding: 0;
+    background-color: #e0ebff;
+}
+article.post-link a { 
+    display: block;
+    padding: 20px;
+}
+/* post format gallery style */
+article.post-gallery{
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+article.post-gallery img{
+    border: none!important;
+}
+article.post-gallery h2{
+    text-align: center;
+}
+
+/* Clearfix */
+.clearfix::before, .clearfix:after{content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+
+/* Two Column title layout*/
+div.title-column{
+    width: 30%;
+    float: left;
+}
+div.text-column{
+    width:70%;
+    float: right;
+}
+/* info-box */
+div.info-box{
+    width:30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding: 20px;
+    background-color: #eee;
+}
+div.info-box h4{
+    margin-bottom: 6px;
+}
+div.info-box p{
+    font-size: 85%;
+}
+
+/* children links */
+.children-links{
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+.children-links a:link,
+.children-links a:visited{
+    text-decoration: none;
+}
+.children-links ul{
+    float: left;
+}
+.children-links li{
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.children-links .parent-link {
+    float: left;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border-right: 1px solid #DDD;
+    font-size: 120%;
+    font-weight: bold;
+}
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+    color: #333;
+}
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited{
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    cursor: default;
+}
+
+/* post style */
+.post h2{
+    margin-bottom: 0;
+}
+p.post-info{
+    font-size: 87%;
+    color: #999;
+}
+p.post-info a:link,
+p.post-info a:visited{
+    color: #999;
+}
+
+/* image */
+img{
+    max-width: 100%;
+    height: auto;
+}
+.has-thumbnail{
+    position:relative;
+    padding-left: 200px;
+}
+.post-thumbnail{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+/* search */
+div.hd-sarch{
+    float: right;
+}
+div.hd-sarch label{
+    position: absolute;
+    left: -9999px;
+}
+div.hd-sarch #searchsubmit {
+    background-color: #006ec3;
+    color: white;
+    padding: 5px 14px;
+    border: none;
+    vertical-align: top;
+}
+div.hd-sarch #s{
+    vertical-align: top;
+    padding: 3px 0;
+}
+
